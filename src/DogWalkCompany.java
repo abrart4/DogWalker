@@ -5,7 +5,7 @@ public class DogWalkCompany {
      * Precondition: 0 <= hour <= 23
      */
     public int numAvailableDogs(int hour) {
-
+        return 0;
     }
 
     /**

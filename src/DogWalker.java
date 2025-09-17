@@ -21,7 +21,7 @@ public class DogWalker {
      *                maxDogs > 0
      */
     public int walkDogs(int hour) {
-
+        return 0;
     }
 
     /**
@@ -30,6 +30,6 @@ public class DogWalker {
      * Preconditions: 0 <= startHour <= endHour <= 23
      */
     public int dogWalkShift(int startHour, int endHour) {
-
+        return 0;
     }
 }
