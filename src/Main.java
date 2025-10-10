@@ -27,6 +27,8 @@ public class Main {
         System.out.println("  ** Total: $" + testAmountTotal);
         System.out.println("------------------");
 
+
+
         DogWalkCompany c = new DogWalkCompany();
         System.out.println(c);
         int hour = c.addDogs();
@@ -35,6 +37,13 @@ public class Main {
         System.out.println(w.walkDogs(hour) + " dogs walked.");
         System.out.println(c.numAvailableDogs(hour) + " dogs remaining.");
         hour = c.addDogs();
+        System.out.println(c);
+        w = new DogWalker(3, c);
+        System.out.println("$" + w.dogWalkShift(7, 10) + ".00 earned");
+
+        for (int i = 7; i < 11; i++) {
+            c.addDogs();
+        }
         System.out.println(c);
         w = new DogWalker(3, c);
         System.out.println("$" + w.dogWalkShift(7, 10) + ".00 earned");
