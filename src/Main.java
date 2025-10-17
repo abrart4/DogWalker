@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         DogWalkCompany c = new DogWalkCompany();
@@ -11,5 +15,20 @@ public class Main {
         System.out.println(c);
         w = new DogWalker(3, c);
         System.out.println("$" + w.dogWalkShift(7, 10) + ".00 earned");
+
+        // challenge
+
+        try {
+            File companiesFile = new File("Companies.txt");
+            Scanner companiesScanner = new Scanner(companiesFile);
+            File walkersFile = new File("Walkers.txt");
+            Scanner walkersScanner = new Scanner(walkersFile);
+            System.out.println(companiesScanner);
+
+        }
+        catch (Exception e) {
+            System.out.println("No money to be made today.");
+            e.printStackTrace();
+        }
     }
 }
