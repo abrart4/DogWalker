@@ -15,6 +15,17 @@ public class DogWalkCompany {
         return schedule[hour];
     }
 
+    /** Sets the number of dogs that are available for a walk
+     * during the time specified by hour
+     * Precondition: 0 <= hour <= 23
+     * Note: used for test cases
+     *
+     * @author AbrarTaseen
+     */
+    public void setNumAvaliableDogs(int hour, int dogs) {
+        schedule[hour] = dogs;
+    }
+
     /**
      * Decreases, by numberDogsWalked, the number of dogs available for a walk
      * during the time specified by hour
